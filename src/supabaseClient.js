@@ -1,0 +1,10 @@
+// src/supabaseClient.js
+import { createClient } from '@supabase/supabase-js';
+
+const supabaseUrl = "https://snwcibgjrcmavgnsjaaq.supabase.co";
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNud2NpYmdqcmNtYXZnbnNqYWFxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjIxMDYyMjYsImV4cCI6MjAzNzY4MjIyNn0.rszhCYTOL7Te06ViiStxUZtz3j0EQ1vxlsP5wWlhq58';
+
+export const supabase = createClient(supabaseUrl, supabaseKey);
+
+// REACT_APP_SUPABASE_URL=https://snwcibgjrcmavgnsjaaq.supabase.co
+// REACT_APP_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNud2NpYmdqcmNtYXZnbnNqYWFxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjIxMDYyMjYsImV4cCI6MjAzNzY4MjIyNn0.rszhCYTOL7Te06ViiStxUZtz3j0EQ1vxlsP5wWlhq58
